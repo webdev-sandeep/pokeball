@@ -148,9 +148,9 @@ function App() {
   //       "https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg",
   //   },
   // ];
-  // if (pokemonData?.length <= 0) {
-  //   return <Shimmer />;
-  // }
+  if (pokemonData?.length <= 0) {
+    return <Shimmer />;
+  }
   return (
     <div className="app">
       <h1 className="heading">Pokebase</h1>
