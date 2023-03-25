@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  border: 1px solid #d4d4d4;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.1);
+  margin: 0rem 1rem 1rem 0rem;
+  height: max-content;
+  width: max-content;
+}
+
+.pokemon-card:hover {
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.img-container {
+  height: 8rem;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img-container,
+.rank,
+.name,
+.type-container {
+  margin: 0.5rem 0rem;
+}
+
+.rank {
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.type-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.type {
+  padding: 0.1rem 0.3rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
+  margin: 0.3rem;
+}
+
+.shimmer-card {
+  width: 15rem;
+  height: 20rem;
+  margin: 0rem 1.5rem 1.5rem 0rem;
+  border-radius: 0.5rem;
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
